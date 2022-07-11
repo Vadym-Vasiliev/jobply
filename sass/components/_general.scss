@@ -1,4 +1,11 @@
 body {
+  font-family: 'Axiforma';
+
+  font-weight: 300;
+  letter-spacing: 0.02em;
+
+  color: $main-text;
+  background-color: $main-bgc;
 }
 
 // 1170
@@ -20,4 +27,15 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.btn {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+  border-radius: 10px;
+  border: transparent;
+
+  color: $white-text;
+  background: $accent;
 }

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Perpetua';
+    src: local('Perpetua Bold'), local('Perpetua-Bold'),
+        url('Perpetua-Bold.woff2') format('woff2'),
+        url('Perpetua-Bold.woff') format('woff'),
+        url('Perpetua-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

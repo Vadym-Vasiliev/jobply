@@ -1,0 +1,93 @@
+.header {
+  padding-top: 57px;
+  padding-bottom: 131px;
+  &__link {
+    font-family: 'Perpetua';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    color: #232443;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+
+  &__span {
+    color: $accent;
+  }
+
+  &__btn {
+    padding: 19px 29px 18px 30px;
+    cursor: pointer;
+
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 87px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+
+    transform: rotate(0);
+    transition: transform 250ms linear;
+
+    color: $second-text;
+    &:hover,
+    &:focus {
+      transform: rotate(-3deg);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 250ms linear;
+
+      background-color: $accent;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
