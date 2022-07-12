@@ -1,0 +1,92 @@
+.job {
+  padding-bottom: 250px;
+
+  background-color: $light-bgc;
+  background-image: url(../img/post-fon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1920px;
+}
+
+.job-position {
+}
+
+.job-content {
+  display: flex;
+  align-items: center;
+}
+
+.job-leftblock {
+  position: relative;
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 250ms linear, background-color 250ms linear;
+
+    background: rgba(255, 255, 255, 0.387);
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.679);
+    }
+  }
+
+  &__svg {
+  }
+
+  &__img {
+    width: 570px;
+  }
+}
+
+.job-rightblock {
+  max-width: 412px;
+  margin-left: 100px;
+
+  &__title {
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.1;
+    max-width: 350px;
+    margin-bottom: 50px;
+
+    color: $second-text;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.89;
+    max-width: 408px;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    padding: 20px 59px;
+
+    transform: scale(1);
+    transition: transform 250ms linear, background-color 250ms linear;
+    color: $white-text;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.01);
+      background-color: rgba(238, 78, 60, 0.8156862745);
+    }
+  }
+}
