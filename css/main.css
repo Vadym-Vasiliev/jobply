@@ -291,7 +291,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -394,19 +394,8 @@ body {
   transform-origin: bottom left;
 }
 
-.hero {
-  overflow: hidden;
-}
-
 .hero-position {
   position: relative;
-}
-.hero-position__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 650px;
-  z-index: -1;
 }
 
 .hero-content {
@@ -414,7 +403,7 @@ body {
 }
 
 .hero-left {
-  width: 658px;
+  max-width: 658px;
   padding-top: 131px;
   padding-bottom: 243px;
 }
@@ -431,10 +420,17 @@ body {
   line-height: 1.89;
   min-width: 1381px;
 }
+.hero-left__img {
+  position: absolute;
+  top: -178px;
+  left: -375px;
+  width: 650px;
+  z-index: -1;
+}
 
 .hero-form {
   position: relative;
-  width: 658px;
+  max-width: 658px;
   box-shadow: 0px 30px 70px rgba(204, 204, 204, 0.5);
   border-radius: 10px;
   margin-top: 107px;
@@ -464,11 +460,9 @@ body {
 .hero-form__btn {
   padding: 19px 54px;
   border-radius: 0px 10px 10px 0px;
-  transform: scale(1);
-  transition: background-color 250ms linear, transform 250ms linear;
+  transition: background-color 250ms;
 }
 .hero-form__btn:hover, .hero-form__btn:focus {
-  transform: scale(1.01);
   background-color: rgba(238, 78, 60, 0.8156862745);
 }
 
