@@ -960,6 +960,192 @@ body {
   background-color: rgba(238, 78, 60, 0.8156862745);
 }
 
+.subscribe {
+  padding-bottom: 113px;
+  padding-top: 239px;
+  background-image: url(../img/subscribe-fon1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 714px;
+}
+.subscribe__title {
+  font-family: "Perpetua";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.14;
+  max-width: 485px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+.subscribe__img-left {
+  position: absolute;
+  left: 260px;
+  bottom: -60px;
+  width: 174px;
+}
+.subscribe__img-right {
+  position: absolute;
+  right: 343px;
+  bottom: 0;
+  width: 359px;
+}
+
+.subscribe-position {
+  position: relative;
+}
+
+.subscribe-content {
+  border-radius: 20px;
+  background-color: #ee4f3c;
+}
+
+.subscribe-backdown {
+  padding: 85px 150px;
+}
+
+.subscribe-form {
+  border-radius: 10px;
+  max-width: 770px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+.subscribe-form__input {
+  font-size: 16px;
+  line-height: 1.56;
+  letter-spacing: 0.05em;
+  border: transparent;
+  border-radius: 10px;
+  padding: 23px 30px;
+  width: 500px;
+}
+.subscribe-form__btn {
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding: 15px 37px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 5px;
+  max-height: 60px;
+  transition: background-color 250ms linear;
+  color: #ffffff;
+}
+.subscribe-form__btn:hover, .subscribe-form__btn:focus {
+  background-color: rgba(238, 78, 60, 0.8156862745);
+}
+.subscribe-form__svg {
+  margin-left: 16px;
+}
+
+.feedback__title {
+  font-family: "Perpetua";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.14;
+  margin-bottom: 50px;
+  max-width: 439px;
+  color: #353540;
+}
+.feedback__span {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ee4f3c;
+}
+.feedback__span::before {
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 30px;
+  background-color: #f8f8f8;
+}
+.feedback__span::after {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 30px;
+  background-color: #f8f8f8;
+}
+
+.feedback-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.feedback-list__item {
+  min-width: 570px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 53px 36px;
+  background-color: #ffffff;
+  transition: box-shadow 250ms linear;
+}
+.feedback-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.feedback-list__item:hover, .feedback-list__item:focus {
+  box-shadow: 0px 50px 70px #eeeeee;
+}
+.feedback-list__item:hover .feedback-list__svg, .feedback-list__item:focus .feedback-list__svg {
+  fill: #ee4f3c;
+}
+.feedback-list__svg {
+  transition: fill 250ms linear;
+  margin-bottom: 4px;
+  fill: #ece1e0;
+}
+.feedback-list__text {
+  font-size: 18px;
+  line-height: 1.89;
+  max-width: 510px;
+}
+
+.feedback-under {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.feedback-under__img {
+  width: 150px;
+}
+.feedback-under__title {
+  font-family: "Perpetua";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  margin-bottom: 5px;
+  color: #353540;
+}
+.feedback-under__text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+}
+
+.feedback-under-wrap {
+  margin-left: 30px;
+}
+.feedback-under-wrap__img {
+  max-width: 140px;
+}
+
 .footer {
   padding-top: 106px;
   padding-bottom: 30px;
@@ -1138,83 +1324,4 @@ body {
   font-size: 14px;
   line-height: 2.1;
   text-align: center;
-}
-
-.subscribe {
-  padding-bottom: 113px;
-  background-image: url(../img/subscribe-fon1.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 714px;
-}
-.subscribe__title {
-  font-family: "Perpetua";
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.14;
-  max-width: 485px;
-  margin-bottom: 50px;
-  color: #ffffff;
-}
-.subscribe__img-left {
-  position: absolute;
-  left: 280px;
-  bottom: -60px;
-  width: 174px;
-}
-.subscribe__img-right {
-  position: absolute;
-  right: 343px;
-  bottom: 0;
-  width: 359px;
-}
-
-.subscribe-position {
-  position: relative;
-}
-
-.subscribe-content {
-  border-radius: 20px;
-  background-color: #ee4f3c;
-}
-
-.subscribe-backdown {
-  padding: 85px 150px;
-}
-
-.subscribe-form {
-  border-radius: 10px;
-  max-width: 770px;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-}
-.subscribe-form__input {
-  font-size: 16px;
-  line-height: 1.56;
-  letter-spacing: 0.05em;
-  border: transparent;
-  border-radius: 10px;
-  padding: 23px 30px;
-  width: 500px;
-}
-.subscribe-form__btn {
-  font-size: 18px;
-  line-height: 29px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  padding: 15px 37px;
-  display: inline-flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: 5px;
-  max-height: 60px;
-  transition: background-color 250ms linear;
-  color: #ffffff;
-}
-.subscribe-form__btn:hover, .subscribe-form__btn:focus {
-  background-color: rgba(238, 78, 60, 0.8156862745);
-}
-.subscribe-form__svg {
-  margin-left: 16px;
 }/*# sourceMappingURL=main.css.map */
