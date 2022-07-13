@@ -785,7 +785,7 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms linear, fill 250ms linear, stroke 250ms linear;
   fill: transparent;
   stroke: #ee4f3c;
   background-color: #fff8f8;
@@ -887,7 +887,6 @@ body {
 }
 
 .job {
-  padding-bottom: 250px;
   background-color: #fff8f8;
   background-image: url(../img/post-fon.png);
   background-repeat: no-repeat;
@@ -963,4 +962,179 @@ body {
 .footer {
   padding-top: 106px;
   padding-bottom: 30px;
+}
+.footer__span {
+  display: block;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.footer__img-left {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 118px;
+}
+.footer__img-right {
+  position: absolute;
+  top: -86px;
+  right: 20px;
+  width: 174px;
+}
+
+.footer-position {
+  position: relative;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left__link {
+  font-family: "Perpetua";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.8;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 250ms linear;
+  color: #353540;
+}
+.footer-left__link:hover, .footer-left__link:focus {
+  transform: scale(1.05);
+}
+.footer-left__span {
+  color: #ee4f3c;
+}
+
+.footer-address {
+  margin-bottom: 30px;
+}
+.footer-address__link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  display: block;
+  transform: scale(1);
+  transition: transform 250ms linear, color 250ms linear, text-decoration 250ms linear;
+  color: #5d5d61;
+}
+.footer-address__link--margin {
+  margin-bottom: 10px;
+}
+.footer-address__link:hover, .footer-address__link:focus {
+  transform: scale(1.02);
+  text-decoration: underline;
+  color: #ee4f3c;
+}
+
+.footer-left-list {
+  display: flex;
+  align-items: center;
+}
+.footer-left-list__item:not(:last-child) {
+  margin-right: 28px;
+}
+.footer-left-list__link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(0) scale(1);
+  transition: transform 250ms linear, fill 250ms linear;
+  color: #5d5d61;
+}
+.footer-left-list__link:hover, .footer-left-list__link:focus {
+  transform: rotate(-45deg) scale(1.1);
+  fill: #ee4f3c;
+}
+.footer-left-list__svg {
+  color: currentColor;
+}
+
+.footer-right-list {
+  display: flex;
+}
+.footer-right-list__item:not(:last-child) {
+  margin-right: 63px;
+}
+.footer-right-list__title {
+  font-family: "Perpetua";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #353540;
+}
+.footer-right-list__link {
+  font-size: 16px;
+  line-height: 3.1;
+  color: #5d5d61;
+}
+
+.footer-list-second__link {
+  display: block;
+  font-size: 16px;
+  line-height: 3.1;
+  transform: scale(1);
+  transition: transform 250ms linear, color 250ms linear, text-decoration 250ms linear;
+  color: #5d5d61;
+}
+.footer-list-second__link:hover, .footer-list-second__link:focus {
+  transform: scale(1.02);
+  color: #ee4f3c;
+  text-decoration: underline;
+}
+
+.footer-list-news__item:not(:last-child) {
+  margin-bottom: 28px;
+}
+.footer-list-news__link {
+  display: block;
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+.footer-list-news__link:hover, .footer-list-news__link:focus {
+  transform: scale(1.01);
+}
+.footer-list-news__content {
+  display: flex;
+}
+.footer-list-news__img {
+  width: 70px;
+}
+.footer-list-news__right {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.footer-list-news__text {
+  font-family: "Perpetua";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  margin-bottom: 2px;
+  max-width: 259px;
+  color: #353540;
+}
+.footer-list-news__span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 0.05em;
+  color: #ee4f3c;
+}
+
+.footer-under__text {
+  font-family: "Perpetua";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.1;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
