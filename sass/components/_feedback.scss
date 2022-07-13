@@ -1,4 +1,6 @@
 .feedback {
+  padding-top: 250px;
+  padding-bottom: 150px;
   &__title {
     font-family: $second-font;
     font-weight: 700;
@@ -56,7 +58,7 @@
   margin-bottom: 70px;
 
   &__item {
-    min-width: 570px;
+    max-width: 570px;
     border: 1px solid #eeeeee;
     border-radius: 5px;
     padding: 53px 36px;

@@ -1,4 +1,5 @@
 .hero {
+  overflow: hidden;
 }
 
 .hero-position {
@@ -7,6 +8,7 @@
 
 .hero-content {
   display: flex;
+  padding-top: 146px;
 }
 
 .hero-left {
@@ -31,8 +33,8 @@
 
   &__img {
     position: absolute;
-    top: -166px;
-    left: -367px;
+    top: -19px;
+    left: -240px;
     width: 650px;
     z-index: -1;
     // opacity: 0.05;

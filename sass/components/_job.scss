@@ -1,14 +1,9 @@
 .job {
-  padding-bottom: 250px;
-
   background-color: $light-bgc;
-  background-image: url(../img/post-fon.png);
+  background-image: url(../../img/post-fon.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1920px;
-}
-
-.job-position {
+  background-size: cover;
 }
 
 .job-content {
@@ -18,6 +13,10 @@
 
 .job-leftblock {
   position: relative;
+  max-width: 570px;
+  margin-bottom: -100px;
+  margin-top: 100px;
+
   &__btn {
     position: absolute;
     top: 50%;

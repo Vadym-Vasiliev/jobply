@@ -26,7 +26,7 @@
     width: calc((100% - 90px - 30px) / 4);
     margin: 15px;
 
-    transition: box-shadow 250ms linear;
+    transition: box-shadow 250ms linear, fill 250ms linear, stroke 250ms linear;
 
     background-color: $main-bgc;
 
@@ -80,6 +80,8 @@
   background-color: #fff8f8;
 
   &__svg {
+    transition: fill 250ms linear, stroke 250ms linear;
+
     fill: currentColor;
     stroke: currentColor;
   }
