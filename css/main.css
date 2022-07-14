@@ -634,6 +634,13 @@ body {
 .posts-list__item:not(:last-child) {
   margin-right: 30px;
 }
+.posts-list__item:hover, .posts-list__item:focus {
+  background-color: rgba(238, 79, 60, 0.5);
+  color: #ffffff;
+}
+.posts-list__item:hover .list-span-block__text, .posts-list__item:focus .list-span-block__text {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .posts-list__up-block {
   display: flex;
   align-items: center;
@@ -661,7 +668,7 @@ body {
   font-size: 20px;
   line-height: 1.65;
   letter-spacing: 0.05em;
-  color: #353540;
+  color: inherit;
 }
 .posts-list__right-block {
   display: flex;
@@ -687,7 +694,7 @@ body {
   font-size: 24px;
   line-height: 1.12;
   margin-bottom: 12px;
-  color: #353540;
+  color: inherit;
 }
 .list-under-block__text {
   font-family: "Perpetua";
@@ -715,7 +722,7 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.05em;
-  color: #353540;
+  color: inherit;
 }
 
 .posts-last-block {
@@ -748,6 +755,16 @@ body {
   letter-spacing: 0.05em;
   margin-bottom: 50px;
   color: #353540;
+}
+.categories__dots {
+  position: absolute;
+  bottom: -175px;
+  left: -270px;
+  width: 180px;
+}
+
+.categories-position {
+  position: relative;
 }
 
 .categories-list {
@@ -830,12 +847,6 @@ body {
   left: 366px;
   width: 433px;
   z-index: -1;
-}
-.start__dots-left {
-  position: absolute;
-  top: -224px;
-  left: -320px;
-  width: 180px;
 }
 .start__dots-right {
   position: absolute;
@@ -985,23 +996,11 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 744px;
+  width: 100%;
   height: 582px;
   z-index: -1;
   background-image: url(../img/subscribe-fon1.png);
-  background-repeat: no-repeat;
-  background-position: 0 89px;
-}
-.subscribe::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 744px;
-  height: 582px;
-  z-index: -1;
-  background-image: url(../img/subscribe-fon2.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: 0 89px;
 }
 .subscribe__title {
@@ -1192,6 +1191,9 @@ body {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
   margin-top: 50px;
+  width: 100vw;
+  margin-left: calc((100vw - 1170px) / -2);
+  background-color: #eeeeee;
 }
 .footer__img-left {
   position: absolute;

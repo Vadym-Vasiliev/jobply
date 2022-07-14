@@ -7,6 +7,10 @@
     border: 1px solid #eeeeee;
     margin-bottom: 30px;
     margin-top: 50px;
+    width: 100vw;
+    margin-left: calc((100vw - 1170px) / -2);
+
+    background-color: #eeeeee;
   }
 
   &__img-left {

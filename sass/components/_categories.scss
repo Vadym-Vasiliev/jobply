@@ -12,6 +12,17 @@
 
     color: $second-text;
   }
+
+  &__dots {
+    position: absolute;
+    bottom: -175px;
+    left: -270px;
+    width: 180px;
+  }
+}
+
+.categories-position {
+  position: relative;
 }
 
 .categories-list {

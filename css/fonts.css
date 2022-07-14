@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Axiforma';
+  src: local('Axiforma Bold'), local('Axiforma-Bold'),
+    url('../fonts/Axiforma-Bold/Axiforma-Bold.woff2') format('woff2'),
+    url('../fonts/Axiforma-Bold/Axiforma-Bold.woff') format('woff'),
+    url('../fonts/Axiforma-Bold/Axiforma-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

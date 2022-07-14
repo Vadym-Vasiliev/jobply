@@ -7,26 +7,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 744px;
+    width: 100%;
     height: 582px;
     z-index: -1;
 
     background-image: url(../img/subscribe-fon1.png);
-    background-repeat: no-repeat;
-    background-position: 0 89px;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 744px;
-    height: 582px;
-    z-index: -1;
-
-    background-image: url(../img/subscribe-fon2.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: 0 89px;
   }
 

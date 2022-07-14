@@ -36,7 +36,15 @@
       margin-right: 30px;
     }
 
-    // background-color: rgba(238, 79, 60, 0.5);
+    &:hover,
+    &:focus {
+      background-color: rgba(238, 79, 60, 0.5);
+      color: $white-text;
+
+      .list-span-block__text {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
   }
 
   &__up-block {
@@ -76,7 +84,7 @@
     line-height: 1.65;
     letter-spacing: 0.05em;
 
-    color: $second-text;
+    color: inherit;
   }
 
   &__right-block {
@@ -112,7 +120,7 @@
     line-height: 1.12;
     margin-bottom: 12px;
 
-    color: $second-text;
+    color: inherit;
   }
 
   &__text {
@@ -148,7 +156,7 @@
     line-height: 1.62;
     letter-spacing: 0.05em;
 
-    color: $second-text;
+    color: inherit;
   }
 }
 
