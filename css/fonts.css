@@ -7,3 +7,33 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Axiforma';
+  src: local('Axiforma Book'), local('Axiforma-Book'),
+    url('../fonts/Axiforma-Book/Axiforma-Book.woff2') format('woff2'),
+    url('../fonts/Axiforma-Book/Axiforma-Book.woff') format('woff'),
+    url('../fonts/Axiforma-Book/Axiforma-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: local('Axiforma Semi Bold'), local('Axiforma-Semi-Bold'),
+    url('../fonts/Axiforma-SemiBold/Axiforma-SemiBold.woff2') format('woff2'),
+    url('../fonts/Axiforma-SemiBold/Axiforma-SemiBold.woff') format('woff'),
+    url('../fonts/Axiforma-SemiBold/Axiforma-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Perpetua';
+  src: local('Perpetua Bold'), local('Perpetua-Bold'),
+    url('../fonts/Perpetua-Bold/Perpetua-Bold.woff2') format('woff2'),
+    url('../fonts/Perpetua-Bold/Perpetua-Bold.woff') format('woff'),
+    url('../fonts/Perpetua-Bold/Perpetua-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
