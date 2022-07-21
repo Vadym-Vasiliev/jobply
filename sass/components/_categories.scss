@@ -2,6 +2,11 @@
   padding-top: 150px;
   padding-bottom: 147px;
 
+  background-image: url(../../img/start-dots-left.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  background-position: 425px 750px;
+
   &__title {
     font-family: $second-font;
     font-weight: 700;
@@ -11,13 +16,6 @@
     margin-bottom: 50px;
 
     color: $second-text;
-  }
-
-  &__dots {
-    position: absolute;
-    bottom: -175px;
-    left: -270px;
-    width: 180px;
   }
 }
 

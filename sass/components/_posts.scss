@@ -50,7 +50,6 @@
   &__up-block {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 20px;
   }
 
@@ -62,7 +61,7 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 50px rgba(153, 153, 153, 0.25);
-
+    margin-right: 15px;
     transform: scale(1);
     transition: transform 250ms linear, background-color 250ms linear;
 
@@ -73,9 +72,6 @@
       transform: scale(1.02);
       background-color: rgba(255, 255, 255, 0.892);
     }
-  }
-
-  &_svg {
   }
 
   &__text {
@@ -90,14 +86,7 @@
   &__right-block {
     display: flex;
     align-items: center;
-    margin-left: 103px;
-  }
-
-  &__right-one {
-  }
-  &__right-two {
-  }
-  &__right-three {
+    margin-left: auto;
   }
 
   &__img {
@@ -165,16 +154,32 @@
   align-items: center;
   justify-content: center;
   margin-top: 70px;
-  &__text {
+  &__link {
     font-weight: 600;
     font-size: 24px;
     line-height: 39px;
     letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+
+    transform: scale(1);
+    transition: transform 250ms linear, color 250ms linear;
 
     color: $white-text;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      color: $accent;
+
+      .posts-last-block__svg {
+        fill: $accent;
+      }
+    }
   }
 
   &__svg {
+    transition: fill 250ms linear;
     margin-left: 13px;
     fill: $white-text;
   }

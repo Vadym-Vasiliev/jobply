@@ -1,6 +1,6 @@
 .subscribe {
   position: relative;
-  height: 582px;
+  min-height: 582px;
 
   &::before {
     content: '';
@@ -32,12 +32,6 @@
     bottom: -63px;
     width: 174px;
   }
-  &__img-right {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 359px;
-  }
 }
 
 .subscribe-position {
@@ -50,6 +44,10 @@
   max-width: 1170px;
 
   background-color: $accent;
+
+  background-image: url(../img/subscribe-right.png);
+  background-repeat: no-repeat;
+  background-position: 810px;
 }
 
 .subscribe-form {

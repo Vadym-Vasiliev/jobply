@@ -42,7 +42,6 @@
 }
 
 .hero-form {
-  position: relative;
   max-width: 658px;
   box-shadow: 0px 30px 70px rgba(204, 204, 204, 0.5);
   border-radius: 10px;
@@ -51,6 +50,10 @@
   align-items: center;
 
   background: $main-bgc;
+
+  &__position {
+    position: relative;
+  }
 
   &__input {
     border: transparent;
@@ -71,10 +74,6 @@
     top: 50%;
     left: 0;
     transform: translate(20px, -50%);
-
-    &--marker {
-      left: 248px;
-    }
   }
 
   &__btn {

@@ -13,7 +13,7 @@
     <header class="header">
       <div class="container">
         <div class="header-content">
-          <a class="header__link" href="#">J<span class="header__span">o</span>bply</a>
+          <a class="logo" href="#">J<span class="header__span">o</span>bply</a>
 
           <ul class="header-list">
             <li class="header-list__item">
@@ -49,26 +49,29 @@
                 </p>
 
                 <form class="hero-form">
-                  <svg class="hero-form__svg" width="20" height="20">
-                    <use href="./img/sprite/sprite.svg#icon-hero-search"></use>
-                  </svg>
-                  <input
-                    class="hero-form__input hero-form__input--search"
-                    type="text"
-                    name="text"
-                    placeholder="Job title or Keyword"
-                  />
+                  <div class="hero-form__position">
+                    <input
+                      class="hero-form__input hero-form__input--search"
+                      type="text"
+                      name="text"
+                      placeholder="Job title or Keyword"
+                    />
+                    <svg class="hero-form__svg" width="20" height="20">
+                      <use href="./img/sprite/sprite.svg#icon-hero-search"></use>
+                    </svg>
+                  </div>
 
-                  <svg class="hero-form__svg hero-form__svg--marker" width="24" height="24">
-                    <use href="./img/sprite/sprite.svg#icon-hero-marker"></use>
-                  </svg>
-                  <input
-                    class="hero-form__input hero-form__input--marker"
-                    type="text"
-                    name="text"
-                    placeholder="Location"
-                  />
-
+                  <div class="hero-form__position">
+                    <input
+                      class="hero-form__input hero-form__input--marker"
+                      type="text"
+                      name="text"
+                      placeholder="Location"
+                    />
+                    <svg class="hero-form__svg hero-form__svg--marker" width="24" height="24">
+                      <use href="./img/sprite/sprite.svg#icon-hero-marker"></use>
+                    </svg>
+                  </div>
                   <button class="btn hero-form__btn" type="submit">Search</button>
                 </form>
               </div>
@@ -159,15 +162,9 @@
                 </a>
                 <p class="posts-list__text">Slack</p>
                 <div class="posts-list__right-block">
-                  <div class="posts-list__right-one">
-                    <img class="posts-list__img" src="./img/posts-right1.png" alt="img" />
-                  </div>
-                  <div class="posts-list__right-two">
-                    <img class="posts-list__img" src="./img/posts-right2.png" alt="img" />
-                  </div>
-                  <div class="posts-list__right-three">
-                    <img class="posts-list__img" src="./img/posts-right3.png" alt="img" />
-                  </div>
+                  <img class="posts-list__img" src="./img/posts-right1.png" alt="img" />
+                  <img class="posts-list__img" src="./img/posts-right2.png" alt="img" />
+                  <img class="posts-list__img" src="./img/posts-right3.png" alt="img" />
                 </div>
               </div>
 
@@ -237,10 +234,12 @@
           </ul>
 
           <div class="posts-last-block">
-            <p class="posts-last-block__text">View All</p>
-            <svg class="posts-last-block__svg" width="30" height="30">
-              <use href="./img/sprite/sprite.svg#icon-posts-right-arrow"></use>
-            </svg>
+            <a class="posts-last-block__link" href="#"
+              >View All
+              <svg class="posts-last-block__svg" width="30" height="30">
+                <use href="./img/sprite/sprite.svg#icon-posts-right-arrow"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -249,8 +248,6 @@
       <section class="categories">
         <div class="container">
           <div class="categories-position">
-            <img class="categories__dots" src="./img/start-dots-left.png" alt="dots" />
-
             <h2 class="categories__title">Job Categories</h2>
 
             <ul class="categories-list">
@@ -524,7 +521,6 @@
               </form>
             </div>
             <img class="subscribe__img-left" src="./img/subscribe-dots.png" alt="png" />
-            <img class="subscribe__img-right" src="./img/subscribe-right.png" alt="png" />
           </div>
         </div>
       </section>
@@ -536,7 +532,7 @@
         <div class="footer-position">
           <div class="footer-flex">
             <div class="footer-left">
-              <a class="footer-left__link" href="#"
+              <a class="logo logo--footer" href="#"
                 >J<span class="footer-left__span">o</span>bply</a
               >
 
@@ -615,38 +611,28 @@
 
                   <ul class="footer-list-second footer-list-news">
                     <li class="footer-list-news__item">
-                      <a class="footer-list-news__link" href="#">
-                        <div class="footer-list-news__content">
-                          <img
-                            class="footer-list-news__img"
-                            src="./img/footer-news1.svg"
-                            alt="img"
-                          />
-                          <div class="footer-list-news__right">
-                            <p class="footer-list-news__text">
-                              Understanding the Cybersecurity Landscape in 2021
-                            </p>
-                            <span class="footer-list-news__span">21 June, 2021</span>
-                          </div>
+                      <div class="footer-list-news__content">
+                        <a class="footer-list-news__link" href="#"> </a>
+                        <img class="footer-list-news__img" src="./img/footer-news1.svg" alt="img" />
+                        <div class="footer-list-news__right">
+                          <p class="footer-list-news__text">
+                            Understanding the Cybersecurity Landscape in 2021
+                          </p>
+                          <span class="footer-list-news__span">21 June, 2021</span>
                         </div>
-                      </a>
+                      </div>
                     </li>
                     <li class="footer-list-news__item">
-                      <a class="footer-list-news__link" href="#">
-                        <div class="footer-list-news__content">
-                          <img
-                            class="footer-list-news__img"
-                            src="./img/footer-news2.svg"
-                            alt="img"
-                          />
-                          <div class="footer-list-news__right">
-                            <p class="footer-list-news__text">
-                              How to Design for Maximum Product Trust
-                            </p>
-                            <span class="footer-list-news__span">21 June, 2021</span>
-                          </div>
+                      <div class="footer-list-news__content">
+                        <a class="footer-list-news__link" href="#"> </a>
+                        <img class="footer-list-news__img" src="./img/footer-news2.svg" alt="img" />
+                        <div class="footer-list-news__right">
+                          <p class="footer-list-news__text">
+                            How to Design for Maximum Product Trust
+                          </p>
+                          <span class="footer-list-news__span">21 June, 2021</span>
                         </div>
-                      </a>
+                      </div>
                     </li>
                   </ul>
                 </li>
