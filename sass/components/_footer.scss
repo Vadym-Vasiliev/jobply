@@ -29,6 +29,15 @@
     bottom: -10px;
     left: -270px;
     width: 118px;
+    z-index: -1;
+    @include tablet {
+      left: 0;
+    }
+
+    @include mobile {
+      bottom: 100px;
+      left: 0;
+    }
   }
 
   &__img-right {
@@ -36,6 +45,16 @@
     top: -86px;
     right: -270px;
     width: 174px;
+    z-index: -1;
+
+    @include tablet {
+      right: 0;
+    }
+
+    @include mobile {
+      top: 225px;
+      right: 0;
+    }
   }
 }
 .footer-position {

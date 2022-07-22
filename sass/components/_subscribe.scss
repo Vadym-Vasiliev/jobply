@@ -1,6 +1,7 @@
 .subscribe {
   position: relative;
   min-height: 582px;
+  padding-top: 80px;
 
   &::before {
     content: '';
@@ -48,6 +49,16 @@
   background-image: url(../img/subscribe-right.png);
   background-repeat: no-repeat;
   background-position: 810px;
+
+  @include tablet {
+    padding: 85px 120px;
+    background-position: 379px;
+  }
+
+  @include mobile {
+    padding: 80px 10px;
+    background-position: 91px;
+  }
 }
 
 .subscribe-form {
@@ -67,6 +78,10 @@
     border-radius: 10px;
     padding: 23px 30px;
     width: 500px;
+
+    @include mobile {
+      padding: 23px;
+    }
   }
 
   &__btn {
@@ -83,6 +98,10 @@
     transition: background-color 250ms linear;
 
     color: $white-text;
+
+    @include mobile {
+      padding: 15px;
+    }
 
     &:hover,
     &:focus {
