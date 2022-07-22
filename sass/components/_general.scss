@@ -6,6 +6,10 @@ body {
 
   color: $main-text;
   background-color: $main-bgc;
+
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 // 1170
@@ -14,6 +18,18 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include desktop {
+    width: 1200px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include mobile {
+    width: 480px;
+  }
 }
 
 .visually-hidden {
