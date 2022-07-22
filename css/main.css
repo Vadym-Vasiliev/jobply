@@ -286,6 +286,7 @@ body {
   font-family: "Axiforma";
   font-weight: 300;
   letter-spacing: 0.02em;
+  padding-top: 133px;
   color: #5d5d61;
   background-color: #ffffff;
 }
@@ -1338,8 +1339,13 @@ body.menu-open {
 }
 
 .footer {
-  padding-top: 106px;
+  padding-top: 100px;
   padding-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 60px;
+  }
 }
 .footer__span {
   display: block;
@@ -1349,6 +1355,16 @@ body.menu-open {
   width: 100vw;
   margin-left: calc((100vw - 1170px) / -2);
   background-color: #eeeeee;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__span {
+    margin-left: calc((100vw - 738px) / -2);
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__span {
+    margin-left: calc((100vw - 450px) / -2);
+  }
 }
 .footer__img-left {
   position: absolute;
@@ -1370,6 +1386,14 @@ body.menu-open {
 .footer-flex {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .footer-flex {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .logo--footer {
@@ -1409,6 +1433,11 @@ body.menu-open {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .footer-left-list {
+    justify-content: center;
+  }
+}
 .footer-left-list__item:not(:last-child) {
   margin-right: 28px;
 }
@@ -1438,8 +1467,24 @@ body.menu-open {
 .footer-right-list {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .footer-right-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .footer-right-list__item:not(:last-child) {
   margin-right: 63px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-right-list__item:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-right-list__item:not(:last-child) {
+    margin-right: 0;
+  }
 }
 .footer-right-list__title {
   font-family: "Perpetua";
@@ -1477,6 +1522,13 @@ body.menu-open {
   display: flex;
   transform: scale(1);
   transition: transform 250ms linear;
+}
+@media screen and (max-width: 767px) {
+  .footer-list-news__content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 }
 .footer-list-news__content:hover, .footer-list-news__content:focus {
   transform: scale(1.01);

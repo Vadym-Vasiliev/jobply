@@ -1,6 +1,10 @@
 .footer {
-  padding-top: 106px;
+  padding-top: 100px;
   padding-bottom: 30px;
+
+  @include mobile {
+    padding-top: 60px;
+  }
 
   &__span {
     display: block;
@@ -11,6 +15,13 @@
     margin-left: calc((100vw - 1170px) / -2);
 
     background-color: #eeeeee;
+
+    @include tablet {
+      margin-left: calc((100vw - 738px) / -2);
+    }
+    @include mobile {
+      margin-left: calc((100vw - 450px) / -2);
+    }
   }
 
   &__img-left {
@@ -34,6 +45,13 @@
 .footer-flex {
   display: flex;
   justify-content: space-between;
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .logo--footer {
@@ -79,6 +97,10 @@
   display: flex;
   align-items: center;
 
+  @include mobile {
+    justify-content: center;
+  }
+
   &__item {
     &:not(:last-child) {
       margin-right: 28px;
@@ -117,9 +139,22 @@
 .footer-right-list {
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   &__item {
     &:not(:last-child) {
       margin-right: 63px;
+
+      @include tablet {
+        margin-right: 32px;
+      }
+
+      @include mobile {
+        margin-right: 0;
+      }
     }
   }
 
@@ -173,6 +208,12 @@
     display: flex;
     transform: scale(1);
     transition: transform 250ms linear;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
     &:hover,
     &:focus {
       transform: scale(1.01);
