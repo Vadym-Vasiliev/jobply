@@ -4,11 +4,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  padding-top: 60px;
 }
 
 .job-content {
   display: flex;
   align-items: center;
+
+  @include mobile {
+    flex-direction: column-reverse;
+  }
 }
 
 .job-leftblock {
@@ -35,17 +41,32 @@
 
     background: rgba(255, 255, 255, 0.387);
 
+    @include tablet {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include mobile {
+      width: 80px;
+      height: 80px;
+    }
+
     &:hover,
     &:focus {
       background-color: rgba(255, 255, 255, 0.679);
     }
   }
 
-  &__svg {
-  }
-
   &__img {
     width: 570px;
+
+    @include tablet {
+      width: 400px;
+    }
+
+    @include mobile {
+      width: 400px;
+    }
   }
 }
 
@@ -53,15 +74,32 @@
   max-width: 412px;
   margin-left: 100px;
 
+  @include tablet {
+    margin-left: 50px;
+  }
+
+  @include mobile {
+    margin-left: 0;
+    text-align: center;
+  }
+
   &__title {
     font-family: $second-font;
     font-weight: 700;
     font-size: 48px;
     line-height: 1.1;
-    max-width: 350px;
+
     margin-bottom: 50px;
 
     color: $second-text;
+
+    @include desktop {
+      max-width: 350px;
+    }
+
+    @include tablet {
+      max-width: 350px;
+    }
   }
 
   &__text {
