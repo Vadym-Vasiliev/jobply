@@ -8,6 +8,10 @@
   background-size: cover;
   background-color: #232443;
 
+  @include mobile {
+    padding-top: 60px;
+  }
+
   &__title {
     font-family: $second-font;
     font-weight: 700;
@@ -17,12 +21,26 @@
     margin-bottom: 50px;
 
     color: $white-text;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 }
 
 .posts-list {
   display: flex;
   justify-content: center;
+
+  @include tablet {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
   &__item {
     max-width: 370px;
@@ -32,8 +50,20 @@
     transition: color 250ms linear, background-color 250ms linear;
 
     background-color: $main-bgc;
+
+    @include tablet {
+      width: calc((100% - 30px - 30px) / 2);
+      margin: 15px;
+    }
+
+    @include mobile {
+      width: calc((100% - 30px - 30px) / 1);
+      margin: 15px;
+    }
     &:not(:last-child) {
-      margin-right: 30px;
+      @include desktop {
+        margin-right: 30px;
+      }
     }
 
     &:hover,

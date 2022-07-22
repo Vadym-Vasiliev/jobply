@@ -758,6 +758,11 @@ body.menu-open {
   background-size: cover;
   background-color: #232443;
 }
+@media screen and (max-width: 767px) {
+  .posts {
+    padding-top: 60px;
+  }
+}
 .posts__title {
   font-family: "Perpetua";
   font-weight: 700;
@@ -767,10 +772,27 @@ body.menu-open {
   margin-bottom: 50px;
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .posts__title {
+    text-align: center;
+  }
+}
 
 .posts-list {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .posts-list {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .posts-list {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .posts-list__item {
   max-width: 370px;
@@ -779,8 +801,22 @@ body.menu-open {
   transition: color 250ms linear, background-color 250ms linear;
   background-color: #ffffff;
 }
-.posts-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .posts-list__item {
+    width: calc((100% - 30px - 30px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .posts-list__item {
+    width: calc((100% - 30px - 30px) / 1);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .posts-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .posts-list__item:hover, .posts-list__item:focus {
   background-color: rgba(238, 79, 60, 0.5);
