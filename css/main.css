@@ -563,24 +563,63 @@ body.menu-open {
   display: flex;
   padding-top: 146px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-content {
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-content {
+    padding-top: 40px;
+  }
+}
 
 .hero-left {
   max-width: 658px;
   padding-top: 131px;
   padding-bottom: 243px;
 }
+@media screen and (max-width: 767px) {
+  .hero-left {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+}
 .hero-left__title {
   font-weight: 700;
   font-size: 72px;
   line-height: 1.32;
-  max-width: 652px;
   margin-bottom: 30px;
   color: #353540;
+}
+@media screen and (min-width: 1200px) {
+  .hero-left__title {
+    max-width: 652px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-left__title {
+    max-width: 652px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-left__title {
+    width: 500px;
+  }
 }
 .hero-left__text {
   font-size: 18px;
   line-height: 1.89;
-  min-width: 1381px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-left__text {
+    min-width: 1381px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-left__text {
+    width: 400px;
+  }
 }
 .hero-left__img {
   position: absolute;
@@ -599,6 +638,17 @@ body.menu-open {
   align-items: center;
   background: #ffffff;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-form {
+    max-width: 653px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-form {
+    max-width: 400px;
+    flex-direction: column;
+  }
+}
 .hero-form__position {
   position: relative;
 }
@@ -609,8 +659,19 @@ body.menu-open {
 .hero-form__input--search {
   padding: 23px 20px 23px 60px;
 }
+@media screen and (max-width: 767px) {
+  .hero-form__input--search {
+    min-width: 400px;
+  }
+}
 .hero-form__input--marker {
   padding: 23px 0 23px 62px;
+}
+@media screen and (max-width: 767px) {
+  .hero-form__input--marker {
+    min-width: 400px;
+    padding: 23px 20px 23px 60px;
+  }
 }
 .hero-form__svg {
   position: absolute;
@@ -622,6 +683,12 @@ body.menu-open {
   padding: 19px 54px;
   border-radius: 0px 10px 10px 0px;
   transition: background-color 250ms;
+}
+@media screen and (max-width: 767px) {
+  .hero-form__btn {
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+  }
 }
 .hero-form__btn:hover, .hero-form__btn:focus {
   background-color: rgba(238, 78, 60, 0.8156862745);
@@ -656,28 +723,67 @@ body.menu-open {
 .hero-right-img__img {
   position: absolute;
 }
+@media screen and (max-width: 767px) {
+  .hero-right-img__img {
+    display: none;
+  }
+}
 .hero-right-img__img--one {
   top: 220px;
   left: 0;
   width: 201px;
   z-index: -1;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-right-img__img--one {
+    top: 650px;
+    left: -100px;
+  }
+}
 .hero-right-img__img--two {
   top: 16px;
   left: 150px;
   width: 190px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-right-img__img--two {
+    top: 620px;
+    left: -700px;
+  }
 }
 .hero-right-img__img--three {
   top: 110px;
   right: -305px;
   width: 190px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-right-img__img--three {
+    top: 680px;
+    right: 400px;
+  }
+}
 .hero-right-img__img--four {
   bottom: 115px;
   right: -370px;
   width: 201px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-right-img__img--four {
+    bottom: 50px;
+    right: 208px;
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-right-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-right-list {
+    display: none;
+  }
+}
 .hero-right-list__item {
   position: relative;
   padding: 10px;
@@ -691,10 +797,22 @@ body.menu-open {
   bottom: 66px;
   left: 60px;
 }
+@media screen and (max-width: 767px) {
+  .hero-right-list__item--position-girl {
+    bottom: 20px;
+    left: -380px;
+  }
+}
 .hero-right-list__item--position-man {
   position: absolute;
   right: -340px;
   bottom: 342px;
+}
+@media screen and (max-width: 767px) {
+  .hero-right-list__item--position-man {
+    right: 70px;
+    bottom: 20px;
+  }
 }
 .hero-right-list__img-block {
   border-radius: 20px;

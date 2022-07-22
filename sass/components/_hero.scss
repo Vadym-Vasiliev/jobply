@@ -9,26 +9,55 @@
 .hero-content {
   display: flex;
   padding-top: 146px;
+
+  @include tablet {
+    padding-top: 80px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
+  }
 }
 
 .hero-left {
   max-width: 658px;
   padding-top: 131px;
   padding-bottom: 243px;
+
+  @include mobile {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
   &__title {
     font-weight: 700;
     font-size: 72px;
     line-height: 1.32;
-    max-width: 652px;
+
     margin-bottom: 30px;
 
     color: $second-text;
+
+    @include desktop {
+      max-width: 652px;
+    }
+    @include tablet {
+      max-width: 652px;
+    }
+    @include mobile {
+      width: 500px;
+    }
   }
 
   &__text {
     font-size: 18px;
     line-height: 1.89;
-    min-width: 1381px;
+    @include desktop {
+      min-width: 1381px;
+    }
+
+    @include mobile {
+      width: 400px;
+    }
   }
 
   &__img {
@@ -51,6 +80,15 @@
 
   background: $main-bgc;
 
+  @include tablet {
+    max-width: 653px;
+  }
+
+  @include mobile {
+    max-width: 400px;
+    flex-direction: column;
+  }
+
   &__position {
     position: relative;
   }
@@ -62,10 +100,17 @@
 
     &--search {
       padding: 23px 20px 23px 60px;
+      @include mobile {
+        min-width: 400px;
+      }
     }
 
     &--marker {
       padding: 23px 0 23px 62px;
+      @include mobile {
+        min-width: 400px;
+        padding: 23px 20px 23px 60px;
+      }
     }
   }
 
@@ -81,6 +126,11 @@
     border-radius: 0px 10px 10px 0px;
 
     transition: background-color 250ms;
+
+    @include mobile {
+      border-radius: 0 0 10px 10px;
+      width: 100%;
+    }
 
     &:hover,
     &:focus {
@@ -118,32 +168,62 @@
 
 .hero-right-img__img {
   position: absolute;
+  @include mobile {
+    display: none;
+  }
   &--one {
     top: 220px;
     left: 0;
     width: 201px;
     z-index: -1;
+
+    @include tablet {
+      top: 650px;
+      left: -100px;
+    }
   }
 
   &--two {
     top: 16px;
     left: 150px;
     width: 190px;
+
+    @include tablet {
+      top: 620px;
+      left: -700px;
+    }
   }
   &--three {
     top: 110px;
     right: -305px;
     width: 190px;
+
+    @include tablet {
+      top: 680px;
+      right: 400px;
+    }
   }
 
   &--four {
     bottom: 115px;
     right: -370px;
     width: 201px;
+
+    @include tablet {
+      bottom: 50px;
+      right: 208px;
+    }
   }
 }
 
 .hero-right-list {
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
   &__item {
     position: relative;
     padding: 10px;
@@ -157,12 +237,21 @@
       position: absolute;
       bottom: 66px;
       left: 60px;
+
+      @include mobile {
+        bottom: 20px;
+        left: -380px;
+      }
     }
 
     &--position-man {
       position: absolute;
       right: -340px;
       bottom: 342px;
+      @include mobile {
+        right: 70px;
+        bottom: 20px;
+      }
     }
   }
   &__img-block {
