@@ -906,10 +906,17 @@ body.menu-open {
 .categories {
   padding-top: 150px;
   padding-bottom: 147px;
-  background-image: url(../../img/start-dots-left.png);
-  background-repeat: no-repeat;
-  background-size: 180px;
-  background-position: 425px 750px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .categories {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .categories {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 .categories__title {
   font-family: "Perpetua";
@@ -920,9 +927,23 @@ body.menu-open {
   margin-bottom: 50px;
   color: #353540;
 }
+@media screen and (max-width: 767px) {
+  .categories__title {
+    text-align: center;
+  }
+}
 
 .categories-position {
   position: relative;
+  background-image: url(../../img/start-dots-left.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  background-position: 984px 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .categories-position {
+    background-position: 600px 0;
+  }
 }
 
 .categories-list {
@@ -938,6 +959,16 @@ body.menu-open {
   margin: 15px;
   transition: box-shadow 250ms linear, fill 250ms linear, stroke 250ms linear;
   background-color: #ffffff;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .categories-list__item {
+    width: calc((100% - 90px - 30px) / 3);
+  }
+}
+@media screen and (max-width: 767px) {
+  .categories-list__item {
+    width: calc((100% - 30px - 30px) / 2);
+  }
 }
 .categories-list__item:hover, .categories-list__item:focus {
   box-shadow: 0px 70px 70px #eeeeee;
