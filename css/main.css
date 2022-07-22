@@ -1254,6 +1254,12 @@ body.menu-open {
   padding-top: 250px;
   padding-bottom: 150px;
 }
+@media screen and (max-width: 767px) {
+  .feedback {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .feedback__title {
   font-family: "Perpetua";
   font-weight: 700;
@@ -1262,6 +1268,11 @@ body.menu-open {
   margin-bottom: 50px;
   max-width: 439px;
   color: #353540;
+}
+@media screen and (max-width: 767px) {
+  .feedback__title {
+    text-align: center;
+  }
 }
 .feedback__span {
   position: relative;
@@ -1272,6 +1283,16 @@ body.menu-open {
   margin-left: auto;
   margin-right: auto;
   background-color: #ee4f3c;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feedback__span {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .feedback__span {
+    margin-top: 70px;
+  }
 }
 .feedback__span::before {
   position: absolute;
@@ -1299,8 +1320,24 @@ body.menu-open {
 .feedback-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
   align-items: flex-start;
+}
+@media screen and (min-width: 1200px) {
+  .feedback-list {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feedback-list {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .feedback-list {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .feedback-list__item {
   max-width: 570px;
@@ -1310,8 +1347,16 @@ body.menu-open {
   background-color: #ffffff;
   transition: box-shadow 250ms linear;
 }
-.feedback-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feedback-list__item {
+    margin: 15px;
+    width: calc((100% - 30px - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feedback-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .feedback-list__item:hover, .feedback-list__item:focus {
   box-shadow: 0px 50px 70px #eeeeee;
