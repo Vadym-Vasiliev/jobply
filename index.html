@@ -4,13 +4,659 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Gomuxo</title>
+    <title>JOBPLY</title>
   </head>
   <body>
-
     <!-- HEADER -->
-    <header  class="header">
-      <div class="container"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a class="logo" href="#">J<span class="header__span">o</span>bply</a>
+
+          <button class="menu-btn" type="button" data-menu-button>
+            <svg class="menu-btn__svg" width="80" height="80">
+              <use class="menu-btn__burger" href="./img/sprite/sprite.svg#icon-burger"></use>
+              <use class="menu-btn__cross" href="./img/sprite/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+
+          <div class="menu-box" data-menu>
+            <ul class="header-list">
+              <li class="header-list__item">
+                <a class="header-list__link" href="#">Home</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="#">Categories</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="#">Service</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="#">Jobs</a>
+              </li>
+            </ul>
+
+            <button class="btn header__btn" type="button">Post a Vacancy</button>
+          </div>
+        </div>
+      </div>
     </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-position">
+            <div class="hero-content">
+              <div class="hero-left">
+                <h1 class="hero-left__title">Find & Apply For Your Dream Job</h1>
+                <p class="hero-left__text">
+                  The website is chockablock with useful features, allowing you to efficiently
+                  search and apply for roles across all sectors, experience levels and locations.
+                </p>
+
+                <form class="hero-form">
+                  <div class="hero-form__position">
+                    <input
+                      class="hero-form__input hero-form__input--search"
+                      type="text"
+                      name="text"
+                      placeholder="Job title or Keyword"
+                    />
+                    <svg class="hero-form__svg" width="20" height="20">
+                      <use href="./img/sprite/sprite.svg#icon-hero-search"></use>
+                    </svg>
+                  </div>
+
+                  <div class="hero-form__position">
+                    <input
+                      class="hero-form__input hero-form__input--marker"
+                      type="text"
+                      name="text"
+                      placeholder="Location"
+                    />
+                    <svg class="hero-form__svg hero-form__svg--marker" width="24" height="24">
+                      <use href="./img/sprite/sprite.svg#icon-hero-marker"></use>
+                    </svg>
+                  </div>
+                  <button class="btn hero-form__btn" type="submit">Search</button>
+                </form>
+              </div>
+              <div class="hero-right">
+                <img class="hero-right__img" src="./img/hero-main.png" alt="girl" />
+                <img class="hero-right__circle-small" src="./img/hero-small.png" alt="circle" />
+                <img class="hero-right__circle-big" src="./img/hero-big.png" alt="circle" />
+
+                <img
+                  class="hero-right-img__img hero-right-img__img--one"
+                  src="./img/hero1.png"
+                  alt="png"
+                />
+
+                <img
+                  class="hero-right-img__img hero-right-img__img--two"
+                  src="./img/hero2.png"
+                  alt="png"
+                />
+
+                <img
+                  class="hero-right-img__img hero-right-img__img--three"
+                  src="./img/hero3.png"
+                  alt="png"
+                />
+
+                <img
+                  class="hero-right-img__img hero-right-img__img--four"
+                  src="./img/hero4.png"
+                  alt="png"
+                />
+
+                <ul class="hero-right-list">
+                  <li class="hero-right-list__item hero-right-list__item--position-girl">
+                    <div class="hero-right-list__img-block">
+                      <img class="hero-right-list__img" src="./img/hero-girl.png" alt="img" />
+                    </div>
+                    <div class="hero-right-list__svg-block">
+                      <div class="hero-right-list__svg-flex">
+                        <svg class="hero-right-list__svg" width="13" height="13">
+                          <use href="./img/sprite/sprite.svg#icon-feedback-star"></use>
+                        </svg>
+                        <span class="hero-right-list__span">4.8</span>
+                      </div>
+                    </div>
+                    <div class="hero-right-list__content">
+                      <h3 class="hero-right-list__title">Maliha</h3>
+                      <p class="hero-right-list__text">UX Designer</p>
+                    </div>
+                  </li>
+                  <li class="hero-right-list__item hero-right-list__item--position-man">
+                    <div class="hero-right-list__img-block hero-right-list__img-block--bgc">
+                      <img class="hero-right-list__img" src="./img/hero-man.png" alt="img" />
+                    </div>
+                    <div class="hero-right-list__svg-block">
+                      <div class="hero-right-list__svg-flex">
+                        <svg class="hero-right-list__svg" width="13" height="13">
+                          <use href="./img/sprite/sprite.svg#icon-feedback-star"></use>
+                        </svg>
+                        <span class="hero-right-list__span">4.5</span>
+                      </div>
+                    </div>
+                    <div class="hero-right-list__content">
+                      <h3 class="hero-right-list__title">Adam</h3>
+                      <p class="hero-right-list__text">Project Manager</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img class="hero-left__img" src="./img/hero-fon.png" alt="fon-left" />
+          </div>
+        </div>
+      </section>
+
+      <!-- POSTS -->
+      <section class="posts">
+        <div class="container">
+          <h2 class="posts__title">Popular Job Posts</h2>
+
+          <ul class="posts-list">
+            <li class="posts-list__item">
+              <div class="posts-list__up-block">
+                <a class="posts-list__link" href="#">
+                  <svg class="posts-list__svg" width="30" height="30">
+                    <use href="./img/sprite/sprite.svg#icon-posts1"></use>
+                  </svg>
+                </a>
+                <p class="posts-list__text">Slack</p>
+                <div class="posts-list__right-block">
+                  <img class="posts-list__img" src="./img/posts-right1.png" alt="img" />
+                  <img class="posts-list__img" src="./img/posts-right2.png" alt="img" />
+                  <img class="posts-list__img" src="./img/posts-right3.png" alt="img" />
+                </div>
+              </div>
+
+              <div class="list-under-block">
+                <h3 class="list-under-block__title">Sr. Product Designer</h3>
+                <p class="list-under-block__text">Full Time - New York City</p>
+              </div>
+
+              <div class="list-span-block">
+                <p class="list-span-block__text list-span-block__text--main">Remote</p>
+                <p class="list-span-block__text list-span-block__text--second">Anywhere</p>
+                <span class="list-span-block__span">$10k - $25k</span>
+              </div>
+            </li>
+            <li class="posts-list__item">
+              <div class="posts-list__up-block">
+                <a class="posts-list__link" href="#">
+                  <svg class="posts-list__svg" width="30" height="30">
+                    <use href="./img/sprite/sprite.svg#icon-posts2"></use>
+                  </svg>
+                </a>
+                <p class="posts-list__text">Google</p>
+                <div class="posts-list__right-block">
+                  <img class="posts-list__img" src="./img/posts-right2-1.png" alt="img" />
+                  <img class="posts-list__img" src="./img/posts-right2-2.png" alt="img" />
+                  <img class="posts-list__img" src="./img/posts-right3.png" alt="img" />
+                </div>
+              </div>
+
+              <div class="list-under-block">
+                <h3 class="list-under-block__title">Sr. Product Designer</h3>
+                <p class="list-under-block__text">Full Time - New York City</p>
+              </div>
+
+              <div class="list-span-block">
+                <p class="list-span-block__text list-span-block__text--main">Remote</p>
+                <p class="list-span-block__text list-span-block__text--second">Anywhere</p>
+                <span class="list-span-block__span">$10k - $25k</span>
+              </div>
+            </li>
+            <li class="posts-list__item">
+              <div class="posts-list__up-block">
+                <a class="posts-list__link" href="#">
+                  <svg class="posts-list__svg" width="30" height="30">
+                    <use href="./img/sprite/sprite.svg#icon-posts3"></use>
+                  </svg>
+                </a>
+                <p class="posts-list__text">Indeed</p>
+                <div class="posts-list__right-block">
+                  <img class="posts-list__img" src="./img/posts-right3-1.png" alt="img" />
+                  <img class="posts-list__img" src="./img/posts-right3-2.png" alt="img" />
+                  <img class="posts-list__img" src="./img/posts-right3.png" alt="img" />
+                </div>
+              </div>
+
+              <div class="list-under-block">
+                <h3 class="list-under-block__title">Sr. Product Designer</h3>
+                <p class="list-under-block__text">Full Time - New York City</p>
+              </div>
+
+              <div class="list-span-block">
+                <p class="list-span-block__text list-span-block__text--main">Remote</p>
+                <p class="list-span-block__text list-span-block__text--second">Anywhere</p>
+                <span class="list-span-block__span">$10k - $25k</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="posts-last-block">
+            <a class="posts-last-block__link" href="#"
+              >View All
+              <svg class="posts-last-block__svg" width="30" height="30">
+                <use href="./img/sprite/sprite.svg#icon-posts-right-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORIES  -->
+      <section class="categories">
+        <div class="container">
+          <div class="categories-position">
+            <h2 class="categories__title">Job Categories</h2>
+
+            <ul class="categories-list">
+              <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                  <div class="categories-svg">
+                    <svg class="categories-list__svg" width="60" height="60">
+                      <use href="./img/sprite/sprite.svg#icon-categories1"></use>
+                    </svg>
+                  </div>
+                  <div class="categories-content">
+                    <h3 class="categories-list__title">Accouting & Finance</h3>
+                    <p class="categories-list__text">125 Job Vacancy</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                  <div class="categories-svg">
+                    <svg class="categories-list__svg" width="60" height="60">
+                      <use href="./img/sprite/sprite.svg#icon-categories2"></use>
+                    </svg>
+                  </div>
+                  <div class="categories-content">
+                    <h3 class="categories-list__title">UI/UX Design</h3>
+                    <p class="categories-list__text">52 Job Vacancy</p>
+                  </div>
+                </a>
+              </li>
+              <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                  <div class="categories-svg">
+                    <svg class="categories-list__svg" width="60" height="60">
+                      <use href="./img/sprite/sprite.svg#icon-categories3"></use>
+                    </svg>
+                  </div>
+                  <div class="categories-content">
+                    <h3 class="categories-list__title">Content Writing</h3>
+                    <p class="categories-list__text">150 Job Vacancy</p>
+                  </div>
+                </a>
+              </li>
+              <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                  <div class="categories-svg">
+                    <svg class="categories-list__svg" width="60" height="60">
+                      <use href="./img/sprite/sprite.svg#icon-categories4"></use>
+                    </svg>
+                  </div>
+                  <div class="categories-content">
+                    <h3 class="categories-list__title">Accouting & Finance</h3>
+                    <p class="categories-list__text">125 Job Vacancy</p>
+                  </div>
+                </a>
+              </li>
+              <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                  <div class="categories-svg">
+                    <svg class="categories-list__svg" width="60" height="60">
+                      <use href="./img/sprite/sprite.svg#icon-categories5"></use>
+                    </svg>
+                  </div>
+                  <div class="categories-content">
+                    <h3 class="categories-list__title">Digital Marketing</h3>
+                    <p class="categories-list__text">150 Job Vacancy</p>
+                  </div>
+                </a>
+              </li>
+              <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                  <div class="categories-svg">
+                    <svg class="categories-list__svg" width="60" height="60">
+                      <use href="./img/sprite/sprite.svg#icon-categories6"></use>
+                    </svg>
+                  </div>
+                  <div class="categories-content">
+                    <h3 class="categories-list__title">Technical Support</h3>
+                    <p class="categories-list__text">350 Job Vacancy</p>
+                  </div>
+                </a>
+              </li>
+              <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                  <div class="categories-svg">
+                    <svg class="categories-list__svg" width="60" height="60">
+                      <use href="./img/sprite/sprite.svg#icon-categories7"></use>
+                    </svg>
+                  </div>
+                  <div class="categories-content">
+                    <h3 class="categories-list__title">Human Resource</h3>
+                    <p class="categories-list__text">35 Job Vacancy</p>
+                  </div>
+                </a>
+              </li>
+              <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                  <div class="categories-svg">
+                    <svg class="categories-list__svg" width="60" height="60">
+                      <use href="./img/sprite/sprite.svg#icon-categories8 "></use>
+                    </svg>
+                  </div>
+                  <div class="categories-content">
+                    <h3 class="categories-list__title">Art & Illustration</h3>
+                    <p class="categories-list__text">52 Job Vacancy</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- START -->
+      <section class="start">
+        <div class="container">
+          <div class="start-position">
+            <div class="start-flex">
+              <div class="start-leftblock">
+                <h2 class="start-leftblock__title">Get Start New Job</h2>
+                <p class="start-leftblock__text">
+                  create an account so you can get job information that suits you, and you can apply
+                  the salary your demand.
+                </p>
+                <button class="btn start-leftblock__btn" type="button">Create an Account</button>
+              </div>
+              <div class="start-rightblock">
+                <img class="start-rightblock__img" src="./img/start-man.png" alt="man" />
+                <img
+                  class="start-rightblock__img start-rightblock__img--girl"
+                  src="./img/start-girl.png"
+                  alt="girl"
+                />
+              </div>
+            </div>
+            <img class="start__line-red" src="./img/start-line-red.png" alt="line" />
+            <img class="start__line-yellow" src="./img/start-line-yellow.png" alt="line" />
+            <img class="start__dots-right" src="./img/start-dots-right.png" alt="dots" />
+          </div>
+        </div>
+      </section>
+
+      <!-- JOB -->
+      <section class="job">
+        <div class="container">
+          <div class="job-content">
+            <div class="job-leftblock">
+              <img class="job-leftblock__img" src="./img/post-room.png" alt="room" />
+              <button class="job-leftblock__btn" type="button">
+                <svg class="job-leftblock__svg" width="30" height="30">
+                  <use href="./img/sprite/sprite.svg#icon-post-play"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="job-rightblock">
+              <h2 class="job-rightblock__title">Post a Job for UX Designer</h2>
+              <p class="job-rightblock__text">
+                pcreate an account so you can get job information that suits you, and you can apply
+                the salary your demand.
+              </p>
+              <button class="btn job-rightblock__btn" type="button">Post a Job</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEEDBACK -->
+      <section class="feedback">
+        <div class="container">
+          <h2 class="feedback__title">Great Feedback From Candidates</h2>
+
+          <ul class="feedback-list">
+            <li class="feedback-list__item">
+              <svg class="feedback-list__svg" width="50" height="50">
+                <use href="./img/sprite/sprite.svg#icon-feedback"></use>
+              </svg>
+              <p class="feedback-list__text">
+                Very decent services & care about my health. Really happy with his advice. Lorem
+                Ipsum is simply dummy text of the printing and typesetting industry Very decent
+                services & care about my health. Really happy with his advice.
+              </p>
+
+              <div class="feedback-under">
+                <img class="feedback-under__img" src="./img/feedback1.png" alt="circle" />
+
+                <div class="feedback-under-wrap">
+                  <h3 class="feedback-under__title">Maria Jannat</h3>
+                  <p class="feedback-under__text">Content Writer</p>
+                  <img
+                    class="feedback-under__img-start"
+                    src="./img/feedback-stars.png"
+                    alt="start"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="feedback-list__item">
+              <svg class="feedback-list__svg" width="50" height="50">
+                <use href="./img/sprite/sprite.svg#icon-feedback"></use>
+              </svg>
+              <p class="feedback-list__text">
+                Very decent services & care about my health. Really happy with his advice. Lorem
+                Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry.
+              </p>
+
+              <div class="feedback-under">
+                <img class="feedback-under__img" src="./img/feedback2.png" alt="circle" />
+
+                <div class="feedback-under-wrap">
+                  <h3 class="feedback-under__title">Mithela</h3>
+                  <p class="feedback-under__text">UI Designer</p>
+                  <img
+                    class="feedback-under__img-start"
+                    src="./img/feedback-stars.png"
+                    alt="start"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="feedback-list__item">
+              <svg class="feedback-list__svg" width="50" height="50">
+                <use href="./img/sprite/sprite.svg#icon-feedback"></use>
+              </svg>
+              <p class="feedback-list__text">
+                Very decent services & care about my health. Really happy with his advice. Lorem
+                Ipsum is simply dummy text of the printing and typesetting industry Very decent
+                services & care about my health. Really happy with his advice.
+              </p>
+
+              <div class="feedback-under">
+                <img class="feedback-under__img" src="./img/feedback3.png" alt="circle" />
+
+                <div class="feedback-under-wrap">
+                  <h3 class="feedback-under__title">Adam</h3>
+                  <p class="feedback-under__text">Developer</p>
+                  <img
+                    class="feedback-under__img-start"
+                    src="./img/feedback-stars.png"
+                    alt="start"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <span class="feedback__span"></span>
+        </div>
+      </section>
+
+      <!-- SUBSCRIBE -->
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe-position">
+            <div class="subscribe-content">
+              <h2 class="subscribe__title">Subscribe to get update vacancy post</h2>
+
+              <form class="subscribe-form">
+                <input
+                  class="subscribe-form__input"
+                  type="email"
+                  name="email"
+                  placeholder="infomail856@gmail.com"
+                />
+                <button class="btn subscribe-form__btn" type="submit">
+                  Subscribe
+                  <svg class="subscribe-form__svg" width="30" height="30">
+                    <use href="./img/sprite/sprite.svg#icon-subscribe"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <img class="subscribe__img-left" src="./img/subscribe-dots.png" alt="png" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-position">
+          <div class="footer-flex">
+            <div class="footer-left">
+              <a class="logo logo--footer" href="#"
+                >J<span class="footer-left__span">o</span>bply</a
+              >
+
+              <address class="footer-address">
+                <a class="footer-address__link footer-address__link--margin" href="#"
+                  >152/3 , Western Road, New York</a
+                >
+
+                <a class="footer-address__link" href="tel:+99-8569-5234">Call Us: +99-8569-5234</a>
+              </address>
+
+              <ul class="footer-left-list">
+                <li class="footer-left-list__item">
+                  <a class="footer-left-list__link" href="#">
+                    <svg class="footer-left-list__svg" width="30" height="30">
+                      <use href="./img/sprite/sprite.svg#icon-footer-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-left-list__item">
+                  <a class="footer-left-list__link" href="#">
+                    <svg class="footer-left-list__svg" width="30" height="30">
+                      <use href="./img/sprite/sprite.svg#icon-footer-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-left-list__item">
+                  <a class="footer-left-list__link" href="#">
+                    <svg class="footer-left-list__svg" width="30" height="30">
+                      <use href="./img/sprite/sprite.svg#icon-footer-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-right">
+              <ul class="footer-right-list">
+                <li class="footer-right-list__item">
+                  <h3 class="footer-right-list__title">Explore</h3>
+
+                  <ul class="footer-list-second">
+                    <li class="footer-list-second__item">
+                      <a class="footer-list-second__link" href="#"> Featured Job</a>
+                    </li>
+                    <li class="footer-list-second__item">
+                      <a class="footer-list-second__link" href="#">Recent Job Post</a>
+                    </li>
+                    <li class="footer-list-second__item">
+                      <a class="footer-list-second__link" href="#">Total Candidates </a>
+                    </li>
+                    <li class="footer-list-second__item">
+                      <a class="footer-list-second__link" href="#">Support</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-right-list__item">
+                  <h3 class="footer-right-list__title">Useful Link</h3>
+
+                  <ul class="footer-list-second">
+                    <li class="footer-list-second__item">
+                      <a class="footer-list-second__link" href="#">About Us</a>
+                    </li>
+                    <li class="footer-list-second__item">
+                      <a class="footer-list-second__link" href="#">Blog</a>
+                    </li>
+                    <li class="footer-list-second__item">
+                      <a class="footer-list-second__link" href="#">Company</a>
+                    </li>
+                    <li class="footer-list-second__item">
+                      <a class="footer-list-second__link" href="#">Contact Us</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-right-list__item">
+                  <h3 class="footer-right-list__title">Latest News</h3>
+
+                  <ul class="footer-list-second footer-list-news">
+                    <li class="footer-list-news__item">
+                      <div class="footer-list-news__content">
+                        <a class="footer-list-news__link" href="#"> </a>
+                        <img class="footer-list-news__img" src="./img/footer-news1.svg" alt="img" />
+                        <div class="footer-list-news__right">
+                          <p class="footer-list-news__text">
+                            Understanding the Cybersecurity Landscape in 2021
+                          </p>
+                          <span class="footer-list-news__span">21 June, 2021</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="footer-list-news__item">
+                      <div class="footer-list-news__content">
+                        <a class="footer-list-news__link" href="#"> </a>
+                        <img class="footer-list-news__img" src="./img/footer-news2.svg" alt="img" />
+                        <div class="footer-list-news__right">
+                          <p class="footer-list-news__text">
+                            How to Design for Maximum Product Trust
+                          </p>
+                          <span class="footer-list-news__span">21 June, 2021</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <img class="footer__img-left" src="./img/footer-left.png" alt="dots" />
+            <img class="footer__img-right" src="./img/footer-right.png" alt="dots" />
+          </div>
+          <span class="footer__span"></span>
+
+          <p class="footer-under__text">Copyright 2021, All right reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/menu.js" type="module"></script>
+  </body>
 </html>

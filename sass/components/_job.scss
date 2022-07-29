@@ -1,0 +1,129 @@
+.job {
+  background-color: $light-bgc;
+  background-image: url(../../img/post-fon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding-top: 60px;
+}
+
+.job-content {
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+}
+
+.job-leftblock {
+  position: relative;
+  max-width: 570px;
+  margin-bottom: -100px;
+  margin-top: 100px;
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 250ms linear, background-color 250ms linear;
+
+    background: rgba(255, 255, 255, 0.387);
+
+    @include tablet {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include mobile {
+      width: 80px;
+      height: 80px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.679);
+    }
+  }
+
+  &__img {
+    width: 570px;
+
+    @include tablet {
+      width: 400px;
+    }
+
+    @include mobile {
+      width: 400px;
+    }
+  }
+}
+
+.job-rightblock {
+  max-width: 412px;
+  margin-left: 100px;
+
+  @include tablet {
+    margin-left: 50px;
+  }
+
+  @include mobile {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.1;
+
+    margin-bottom: 50px;
+
+    color: $second-text;
+
+    @include desktop {
+      max-width: 350px;
+    }
+
+    @include tablet {
+      max-width: 350px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.89;
+    max-width: 408px;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    padding: 20px 59px;
+
+    transform: scale(1);
+    transition: transform 250ms linear, background-color 250ms linear;
+    color: $white-text;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.01);
+      background-color: rgba(238, 78, 60, 0.8156862745);
+    }
+  }
+}

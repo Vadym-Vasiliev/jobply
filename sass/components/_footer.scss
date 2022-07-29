@@ -1,0 +1,291 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 30px;
+
+  @include mobile {
+    padding-top: 60px;
+  }
+
+  &__span {
+    display: block;
+    border: 1px solid #eeeeee;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    width: 100vw;
+    margin-left: calc((100vw - 1170px) / -2);
+
+    background-color: #eeeeee;
+
+    @include tablet {
+      margin-left: calc((100vw - 738px) / -2);
+    }
+    @include mobile {
+      margin-left: calc((100vw - 450px) / -2);
+    }
+  }
+
+  &__img-left {
+    position: absolute;
+    bottom: -10px;
+    left: -270px;
+    width: 118px;
+    z-index: -1;
+    @include tablet {
+      left: 0;
+    }
+
+    @include mobile {
+      bottom: 100px;
+      left: 0;
+    }
+  }
+
+  &__img-right {
+    position: absolute;
+    top: -86px;
+    right: 0;
+    width: 174px;
+    z-index: -1;
+
+    @include tablet {
+      right: 0;
+    }
+
+    @include mobile {
+      top: 225px;
+      right: 0;
+    }
+  }
+}
+.footer-position {
+  position: relative;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.logo--footer {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.footer-left {
+  max-width: 255px;
+
+  &__span {
+    color: $accent;
+  }
+}
+
+.footer-address {
+  margin-bottom: 30px;
+  &__link {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.88;
+    display: block;
+
+    transform: scale(1);
+    transition: transform 250ms linear, color 250ms linear, text-decoration 250ms linear;
+
+    color: $main-text;
+
+    &--margin {
+      margin-bottom: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+      text-decoration: underline;
+      color: $accent;
+    }
+  }
+}
+
+.footer-left-list {
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
+
+  &__link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(0) scale(1);
+    transition: transform 250ms linear, fill 250ms linear;
+
+    color: $main-text;
+
+    &:hover,
+    &:focus {
+      transform: rotate(-45deg) scale(1.1);
+      fill: $accent;
+    }
+  }
+
+  &__svg {
+    color: currentColor;
+  }
+}
+
+.footer-right {
+  max-width: 740px;
+}
+
+.footer-right-list {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 63px;
+
+      @include tablet {
+        margin-right: 32px;
+      }
+
+      @include mobile {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+
+    color: $second-text;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 3.1;
+
+    color: $main-text;
+  }
+}
+
+.footer-list-second {
+  &__link {
+    display: block;
+    font-size: 16px;
+    line-height: 3.1;
+
+    transform: scale(1);
+    transition: transform 250ms linear, color 250ms linear, text-decoration 250ms linear;
+
+    color: $main-text;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+      color: $accent;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-list-news {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    &:hover,
+    &:focus {
+      transform: scale(1.01);
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+
+  &__img {
+    width: 70px;
+  }
+
+  &__right {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  &__text {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    margin-bottom: 2px;
+    max-width: 259px;
+
+    color: $second-text;
+  }
+
+  &__span {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.05em;
+
+    color: $accent;
+  }
+}
+
+.footer-under {
+  &__text {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.1;
+    text-align: center;
+  }
+}
